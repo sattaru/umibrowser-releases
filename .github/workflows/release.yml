@@ -1,13 +1,1 @@
-- name: Upload installers to GitHub Release (Public Repo)
-        uses: softprops/action-gh-release@v2
-        with:
-          repository: sattaru/umibrowser-releases
-          tag_name: ${{ github.ref_name }}
-          target_commitish: main
-          name: UMI Browser ${{ github.ref_name }}
-          files: |
-            dist/*
-          generate_release_notes: true
-          draft: false
-          prerelease: false
-          token: ${{ secrets.RELEASE_TOKEN }} # <-- Moved from env: to with: token
+
